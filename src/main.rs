@@ -26,6 +26,11 @@ fn create_persona<I: Display, D: Display>(uiid: I, name: String, full_name: Stri
 
 fn main() {
     let persona = create_persona("#11151".to_string(), "Alice".to_string(), "Alice Smith".to_string(), 30.6, "Engineer".to_string());
-    println!("Persona: uiid={}, name={}, full_name={}, age={}, datalife={}", 
-        persona.uiid, persona.name, persona.full_name, persona.age, persona.datalife);
+    println!("Persona: uiid = {}, name = {}, full_name = {}, age = {}, datalife = {}", 
+        persona.uiid,
+        persona.name,
+        persona.full_name,
+        persona.age,
+        persona.datalife
+    );
 }
